@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Ubuntu+Mono&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="{{ url_for ('static',filename='css/style.css')}}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+</head>
+
+<body>
+    <div class="bg-gradiant mainContainer">
+
+        <div class="header">
+            <div class="heading">
+                <h1 id="heading">URL Shortener </h1>
+            </div>
+            <div class="route">
+                <a href="/">HOME</a>
+                <a href="/about">ABOUT</a>
+                <a href="/contact">CONTACT</a>
+            </div>
+        </div>
+        <hr>
+        <div class="box">
+
+            <br>
+            <span class="text">
+                URL Shortener is a website where you can short any url without any problem.
+                Along with them you can use as an IP-Logger also. In this you will get a shortened url for original url
+                and one tracking url.
+                When someone visit the shortened url, its redirects to original url and its IP address, device, location
+                and browser details
+                will stored with tracking url.
+                You can see the visitors details by the provided tracking url.
+                <br>
+                URL Shortener tool is designed to be as user-friendly as possible, and to provide the most detailed and
+                advanced
+                analytic information on every click
+                This is a free tool for everyone.
+                <br> <br>
+                <p id="disclaimer"> <b> Disclaimer :- </b>This tool is for ethical porpose only. If you do some
+                    unethical thing with this tool, you will
+                    be them
+                    only responsible for this. Website developer / owner will not responsible in any reason.
+                </p>
+            </span>
+        </div>
+        <br>
+        <hr>
+        <br>
+
+        <div class="box2">
+            <div class="cont">
+                <b> Developed By </b>
+
+            </div>
+            <br>
+            <a href="https://www.linkedin.com/in/rajeev1699/" target="blank">
+                <img src="{{ url_for('static', filename='img/rajeev.jfif') }}" alt="logo" width="70" height="70">
+            </a>
+            <br>
+            <a href="https://www.linkedin.com/in/rajeev1699/" target="blank">
+                <b> Rajeev Verma </b>
+            </a>
+            <br>
+            <span>
+                CSE Student</span>
+        </div>
+
+        <hr>
+
+
+        <br>
+        <hr>
+
+
+
+        <div class="developer">
+            Made with &#129293; by <a href="https://github.com/Rajeev1699" target="blank">Rajeev Verma</a>
+        </div>
+        <hr>
+        <div class="footer">
+            <a href="https://www.linkedin.com/in/rajeev1699/" target="blank"><i
+                    class="fab fa-linkedin fa-2x icon-3d"></i></a>
+            <a href="https://github.com/Rajeev1699" target="blank"><i class="fab fa-github fa-2x icon-3d"></i></a>
+
+        </div>
+    </div>
+</body>
+
+</html>

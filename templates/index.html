@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Ubuntu+Mono&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="{{ url_for ('static',filename='css/style.css')}}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+</head>
+
+<body>
+    <div class="bg-gradiant mainContainer" style="height : 100vh;">
+
+        <div class="header">
+            <div class="heading">
+                <h1 id="heading">URL Shortener </h1>
+            </div>
+            <div class="route">
+                <a href="#">HOME</a>
+                <a href="/about">ABOUT</a>
+                <a href="/contact">CONTACT</a>
+
+            </div>
+        </div>
+        <div class="form_data">
+            <form action="/shorturl" method="post">
+                <div id="url_error">{{error}}</div>
+                <!-- <div class="input-data"> -->
+                <div class="input-data">
+                    <input type="text" name="url" required placeholder="Paste Your Link Here" autocomplete="off">
+                </div>
+                <div style="text-align: center;">
+                    <button type="submit" id="submit">Submit</button>
+                </div>
+                <!-- </div> -->
+            </form>
+        </div>
+        
+        <div class="developer">
+            Made with &#129293; by <a href="https://github.com/Rajeev1699" target="blank">Rajeev Verma</a>
+        </div>
+        <hr>
+        <div class="footer">
+            <a href="https://www.linkedin.com/in/rajeev1699/" target="blank"><i class="fab fa-linkedin fa-2x icon-3d"></i></a>
+            <a href="https://github.com/Rajeev1699" target="blank"><i class="fab fa-github fa-2x icon-3d"></i></a>
+            </div>
+    </div>
+
+
+</body>
+
+</html>
